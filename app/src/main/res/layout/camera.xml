@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content" android:layout_height="1000dp"
+    tools:context=".CameraActivity">
+
+    <Button
+        android:layout_marginTop="0dp"
+        android:id="@+id/logout_button"
+        android:textColor="#000000"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap,RtlHardcoded,Suspicious0dp"
+        android:layout_marginLeft="280dp"
+        />
+
+    <!-- add Camera Button to open the Camera-->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="140dp"
+        android:id="@+id/camera_button"
+        android:text="@string/camera"
+        tools:ignore="RtlHardcoded"
+        android:layout_marginTop="20dp"/>
+
+
+        <!-- add ImageView to display the captured image-->
+
+        <ImageView
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="100dp"
+            android:id="@+id/click_image"
+            tools:ignore="ContentDescription,RtlHardcoded"
+            android:contentDescription=""
+            android:layout_width="100dp"
+            android:src="@drawable/icon"
+            android:padding="100dp"
+            />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".locationactivity">
+
+    <Button
+            android:id = "@+id/locationbutton"
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:text = "@string/getlocation"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="300dp"/>
+</LinearLayout>
+</RelativeLayout>
